@@ -1,0 +1,19 @@
+@mixin custom-box($w, $h, $r:5px){
+    display: inline-block;
+    width: $w;
+    height: $h;
+    border-radius: $r;
+    background-color: var(--bs-gray-400);
+}
+
+.box-circle-xs{ @include custom-box(40px, 40px, 50%); }
+.box-circle-sm{ @include custom-box(80px, 80px, 50%); }
+.box-circle-md{ @include custom-box(150px, 150px, 50%); }
+.box-circle{ @include custom-box(300px, 300px, 50%); }
+.box-circle-lg{ @include custom-box(500px, 500px, 50%); }
+
+.box-sqr-sm{ @include custom-box(80px, 80px); }
+.box-sqr{ @include custom-box(300px, 300px); }
+.box-sqr-lg{ @include custom-box(500px, 500px); }
+
+.box-350-600{ @include custom-box(350px, 600px); }

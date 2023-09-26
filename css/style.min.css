@@ -1,0 +1,231 @@
+/*-----------------------------------------------------------------
+
+	Theme Name: AppBox
+	Theme URI: http://
+	Description: An App Landing Page Template
+	Author: redishketch
+	Author URI: http://themeforest.net/user/redishketch
+	Version: 1.0.0
+
+-------------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Root & Variables ]
+-----------------------------------------------------------------*/
+:root {
+  --primary-color: #6A49F2;
+  --primary-color-dark: #32236F;
+  --primary-color-text: #3E3F66;
+  --primary-font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: var(--primary-color-text);
+  font-family: var(--primary-font-family);
+}
+
+/* ----------------------------------------------------------------
+     [ Root & Variables ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Mixin ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Mixin ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Header ]
+-----------------------------------------------------------------*/
+.header {
+  width: 100%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.header .navbar-nav .nav-item .nav-link {
+  position: relative;
+  color: var(--primary-color-text);
+  font-weight: 500;
+  margin: 0 5px;
+  padding: 25px 15px;
+  border-bottom: 3px solid transparent;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.header .navbar-nav .nav-item .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: calc(50% - 5px);
+  border-top: 10px solid var(--primary-color);
+  border-left: 10px solid transparent;
+  transform: rotate(-45deg);
+  opacity: 0;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.header .navbar-nav .nav-item .nav-link:hover, .header .navbar-nav .nav-item .nav-link:active {
+  border-bottom: 3px solid var(--primary-color);
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.header .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 3px solid var(--primary-color);
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.header .navbar-nav .nav-item .nav-link.active:before {
+  opacity: 1;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+/* ----------------------------------------------------------------
+     [ Header ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Home Banner Text ]
+-----------------------------------------------------------------*/
+/* Home Banner Text */
+.home-banner-text {
+  min-height: 100vh;
+}
+.home-banner-text .banner-section .banner-text {
+  font-size: 55px;
+  font-weight: bold;
+}
+.home-banner-text .banner-section .banner-sub-text {
+  font-size: 20px;
+}
+
+/* ----------------------------------------------------------------
+     [ Home Banner Text ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Custom Bootstrap ]
+-----------------------------------------------------------------*/
+/* Typography */
+.text-theme {
+  color: var(--primary-color);
+}
+
+/* Typography */
+/* Dimension Helpers */
+.hgt-50 {
+  height: 50px;
+}
+
+/* Dimension Helpers */
+/* Drop Down */
+.dropdown-hover:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Drop Down */
+/* ----------------------------------------------------------------
+     [ Custom Bootstrap ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Custom Hover ]
+-----------------------------------------------------------------*/
+.hover-scale-sm {
+  transform: scale(1);
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.hover-scale-sm:hover, .hover-scale-sm:active {
+  transform: scale(1.1);
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* ----------------------------------------------------------------
+     [ Custom Hover ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Custom Hover ]
+-----------------------------------------------------------------*/
+.box-circle-xs {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bs-gray-400);
+}
+
+.box-circle-sm {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--bs-gray-400);
+}
+
+.box-circle-md {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--bs-gray-400);
+}
+
+.box-circle {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--bs-gray-400);
+}
+
+.box-circle-lg {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: var(--bs-gray-400);
+}
+
+.box-sqr-sm {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: var(--bs-gray-400);
+}
+
+.box-sqr {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  background-color: var(--bs-gray-400);
+}
+
+.box-sqr-lg {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: var(--bs-gray-400);
+}
+
+.box-350-600 {
+  display: inline-block;
+  width: 350px;
+  height: 600px;
+  border-radius: 5px;
+  background-color: var(--bs-gray-400);
+}
+
+/* ----------------------------------------------------------------
+     [ Custom Hover ]
+-----------------------------------------------------------------*/
+
+/*# sourceMappingURL=style.min.css.map */

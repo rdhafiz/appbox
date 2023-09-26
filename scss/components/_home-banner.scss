@@ -1,0 +1,13 @@
+/* Home Banner Text */
+.home-banner-text {
+    min-height: 100vh;
+    .banner-section {
+        .banner-text {
+            font-size: 55px;
+            font-weight: bold;
+        }
+        .banner-sub-text {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.hover-scale-sm{
+    transform: scale(1);
+    @include transition(all 0.2s linear);
+    &:hover,&:active{
+        transform: scale(1.1);
+        @include transition(all 0.2s linear);
+    }
+}

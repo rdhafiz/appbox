@@ -1,0 +1,43 @@
+.header{
+    width: 100%;
+    display: block;
+    background-color: rgba(#ffffff, 0.5);
+    backdrop-filter: blur(5px);
+    
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                position: relative;
+                color: var(--primary-color-text);
+                font-weight: 500;
+                margin: 0 5px;
+                padding: 25px 15px;
+                border-bottom: 3px solid transparent;
+                @include transition(all 0.4s linear);
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    left: calc(50% - 5px);
+                    border-top: 10px solid var(--primary-color);
+                    border-left: 10px solid transparent;
+                    transform: rotate(-45deg);
+                    opacity: 0;
+                    @include transition(all 0.4s linear);
+                }
+                &:hover,&:active{
+                    border-bottom: 3px solid var(--primary-color);
+                    @include transition(all 0.4s linear);
+                }
+                &.active{
+                    border-bottom: 3px solid var(--primary-color);
+                    @include transition(all 0.4s linear);
+                    &:before {
+                        opacity: 1;
+                        @include transition(all 0.4s linear);
+                    }
+                }
+            }
+        }
+    }
+}

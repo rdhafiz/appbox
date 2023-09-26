@@ -1,0 +1,18 @@
+/* Typography */
+.text-theme {
+    color: var(--primary-color);
+}
+/* Typography */
+
+/* Dimension Helpers */
+.hgt-50 {
+    height: 50px;
+}
+/* Dimension Helpers */
+
+/* Drop Down */
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+/* Drop Down */
